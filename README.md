@@ -14,6 +14,8 @@ Browse through the projects within this repository to discover:
 - Varied Technologies: Delve into projects built with different programming languages, frameworks, and tools.
 - Solo Coding Adventure: Follow along with my journey as a polyglot programmer, experimenting with diverse technologies.
 
+Some projects are Dockerized for easy running, allowing you to spin them up quickly in a containerized environment.
+
 ## Getting Started
 
 To get started with CodePolyglot, simply clone this repository and explore the projects within. Each project may contain its own README with specific instructions on how to run and use it.
