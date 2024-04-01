@@ -52,7 +52,7 @@ services:
       - ./frontend:/frontend
     env_file:
       # env. file containing variables to use within this service
-      - ./frontend/.env
+      - ./frontend/.env.development
     depends_on:
       # start image after api is has started
       - postgres
