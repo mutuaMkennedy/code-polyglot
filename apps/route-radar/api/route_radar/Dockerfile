@@ -25,6 +25,16 @@ RUN set -ex && \
         build-base postgresql-dev musl-dev linux-headers && \
     apk add jpeg-dev zlib-dev freetype-dev lcms2-dev openjpeg-dev tiff-dev tk-dev tcl-dev && \
     apk add libffi-dev && \
+    apk add --no-cache \
+               --upgrade \
+               --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing \
+        geos \
+        proj \
+        gdal \
+        binutils \
+    && ln -s /usr/lib/libproj.so.15 /usr/lib/libproj.so \
+    && ln -s /usr/lib/libgdal.so.20 /usr/lib/libgdal.so \
+    && ln -s /usr/lib/libgeos_c.so.1 /usr/lib/libgeos_c.so && \
     /py/bin/pip install -r /tmp/requirements.txt && \
     apk del .tmp-deps && \
     adduser --disabled-password --no-create-home api && \
