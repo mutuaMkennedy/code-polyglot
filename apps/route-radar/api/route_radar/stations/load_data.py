@@ -22,7 +22,7 @@ station_mapping = {
     "stop_lat": "stop_lat",
     "stop_long": "stop_lon",
     "location_type": "location_t",
-    "parent_sta": "parent_sta",
+    "parent_station": "parent_sta",
     "trip_count": "trip_count",
     "trip_ids": "trip_ids",
     "route_ids": "route_ids",
