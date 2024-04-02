@@ -31,7 +31,7 @@ services:
     depends_on:
       - postgres
 
-  react:
+  frontend:
     # NOTE: opting for 'always' will always restart service even if you try to stop it
     restart: unless-stopped
     # NOTE: If hosting images on docker hub, ECR or similar,
@@ -45,7 +45,7 @@ services:
     container_name: route_radar_dev_frontend
     build: ./frontend
     ports:
-      - "3000:3000"
+      - "5173:5173"
     volumes:
       # will allow us to make changes to our react app and have the changes reflect in the container
       # without having to execute the build command.
