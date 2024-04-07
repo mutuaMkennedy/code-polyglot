@@ -1,6 +1,6 @@
 from pathlib import Path
 from django.contrib.gis.utils import LayerMapping
-from .models import Route, Station
+from stations.models import Route, Station
 
 # Auto-generated `LayerMapping` dictionary for Routes model. See https://docs.djangoproject.com/en/4.2/ref/contrib/gis/tutorial/#try-ogrinspect
 # Each key in the dictionary is the name of a model field, and each value is the name of a field in the shapefile.
