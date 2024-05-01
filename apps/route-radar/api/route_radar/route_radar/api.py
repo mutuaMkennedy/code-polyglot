@@ -1,6 +1,6 @@
 from ninja_extra import NinjaExtraAPI
 from django.contrib.admin.views.decorators import staff_member_required
-from stations.api import router as stations_router
+from stations.api.stations import router as stations_router
 
 api = NinjaExtraAPI(
     title="Route Radar API",
