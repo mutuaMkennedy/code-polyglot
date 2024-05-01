@@ -42,9 +42,7 @@ REQ_APPS = [
     "django.contrib.gis",
 ]
 
-OTHER_APPS = [
-    "corsheaders",
-]
+OTHER_APPS = ["corsheaders", "ninja_extra"]
 
 # My apps
 MY_APPS = [
